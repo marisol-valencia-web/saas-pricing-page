@@ -1,1 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FlowDesk AI — Simple pricing for growing technical teams. Choose the plan that fits your workflow." />
+  <title>Pricing — FlowDesk AI</title>
 
+   <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <div class="container nav__inner">
+
+        <!-- Logo -->
+        <a href="#footer" class="nav__logo" aria-label="FlowDesk AI home">
+          <span class="nav__logo-mark" aria-hidden="true"></span>
+          MVC
+        </a>
+
+       <!-- Nav links (hidden on mobile) -->
+<ul class="nav__links" role="list">
+  <li><a href="#features">Features</a></li>
+  <li><a href="#pricing">Pricing</a></li>
+  <li><a href="#faq">FAQ</a></li>
+  <li><a href="#footer">Contact</a></li>
+</ul>
+
+<!-- Desktop CTA -->
+<div class="nav__cta">
+  <a href="#pricing" class="btn btn-secondary">View plans</a>
+  <a href="#pricing" class="btn btn-primary">Start free trial</a>
+</div>
+
+        <!-- Mobile menu icon (visual only) -->
+        <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section class="hero" aria-label="Hero">
+      <div class="container hero__inner">
+
+        <!-- Eyebrow tag -->
+        <div class="hero__eyebrow">
+          <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+          Transparent, flexible pricing
+        </div>
+
+        <!-- Headline -->
+        <h1 class="hero__title">
+          Simple pricing for <span>growing technical</span> teams
+        </h1>
+
+        <!-- Subheadline -->
+        <p class="hero__subtitle">
+          Choose the plan that fits your workflow, team size, and automation needs. No surprises, no hidden fees.
+        </p>
+
+        <!-- Action buttons -->
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn-primary">Start free trial</a>
+          <a href="#footer"  class="btn btn-secondary">Talk to sales</a>
+        </div>
+
+        <!-- Trust line -->
+        <p class="hero__trust" aria-label="Trust signals">
+          <span>No credit card required</span>
+          <span class="hero__trust-dot" aria-hidden="true"></span>
+          <span>Cancel anytime</span>
+          <span class="hero__trust-dot" aria-hidden="true"></span>
+          <span>Secure setup</span>
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BILLING TOGGLE (visual only — no JS)
+         ============================================================ -->
+    <section class="billing" aria-label="Billing period selector">
+      <div class="container">
+
+        <p class="billing__heading">Billing cycle</p>
+
+        <!-- Toggle pill — Monthly is "selected" by default (visual only) -->
+        <div class="billing__toggle" role="group" aria-label="Billing period">
+          <span class="billing__option billing__option--active" aria-pressed="true">Monthly</span>
+          <span class="billing__option" aria-pressed="false">Annual</span>
+        </div>
+
+        <p class="billing__note">Save 20% with annual billing</p>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRICING CARDS
+         ============================================================ -->
+    <section class="pricing" id="pricing" aria-label="Pricing plans">
+      <div class="container">
+
+        <div class="pricing__grid">
+
+          <!-- ── STARTER CARD ── -->
+          <article class="plan-card" aria-label="Starter plan">
+            <p class="plan-card__name">Starter</p>
+            <p class="plan-card__desc">For individuals and small teams starting with workflow automation.</p>
+
+            <div class="plan-card__price">
+              <span class="plan-card__currency">$</span>
+              <span class="plan-card__amount">19</span>
+            </div>
+            <p class="plan-card__period">per user / month</p>
+
+            <a href="#footer" class="btn btn-ghost-accent btn-full">Start Starter</a>
+
+            <div class="plan-card__divider"></div>
+            <p class="plan-card__features-title">What's included</p>
+
+            <ul class="plan-card__features">
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                1 workspace
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Up to 3 users
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Basic workflow templates
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Email support
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Standard analytics
+              </li>
+            </ul>
+          </article>
+
+          <!-- ── PRO CARD (highlighted) ── -->
+          <article class="plan-card plan-card--pro" aria-label="Pro plan — most popular">
+            <span class="plan-badge">Most popular</span>
+
+            <p class="plan-card__name">Pro</p>
+            <p class="plan-card__desc">For growing teams that need advanced automation and reporting.</p>
+
+            <div class="plan-card__price">
+              <span class="plan-card__currency">$</span>
+              <span class="plan-card__amount">49</span>
+            </div>
+            <p class="plan-card__period">per user / month</p>
+
+            <a href="#footer" class="btn btn-primary btn-full">Choose Pro</a>
+
+            <div class="plan-card__divider"></div>
+            <p class="plan-card__features-title">What's included</p>
+
+            <ul class="plan-card__features">
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                5 workspaces
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Up to 15 users
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Advanced automation builder
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Priority support
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Advanced analytics
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Integrations with CRM &amp; project tools
+              </li>
+            </ul>
+          </article>
+
+          <!-- ── ENTERPRISE CARD ── -->
+          <article class="plan-card" aria-label="Enterprise plan">
+            <p class="plan-card__name">Enterprise</p>
+            <p class="plan-card__desc">For organizations that need scale, security, and custom support.</p>
+
+            <div class="plan-card__price">
+              <span class="plan-card__amount plan-card__amount--custom">Custom</span>
+            </div>
+            <p class="plan-card__period">contact us for a quote</p>
+
+            <a href="#footer" class="btn btn-secondary btn-full">Talk to sales</a>
+
+            <div class="plan-card__divider"></div>
+            <p class="plan-card__features-title">What's included</p>
+
+            <ul class="plan-card__features">
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Unlimited workspaces
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Unlimited users
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Custom workflow architecture
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Dedicated success manager
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Advanced security controls
+              </li>
+              <li class="plan-card__feature">
+                <span class="plan-card__feature-icon" aria-hidden="true"></span>
+                Custom integrations
+              </li>
+            </ul>
+          </article>
+
+        </div><!-- /pricing__grid -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FEATURE COMPARISON TABLE
+         ============================================================ -->
+    <section class="comparison" id="comparison" aria-label="Feature comparison">
+      <div class="container">
+
+        <div class="comparison__header">
+          <span class="section-label">Compare plans</span>
+          <h2 class="section-title">Everything in one view</h2>
+          <p class="section-subtitle">A clear breakdown of what each plan includes so you can choose with confidence.</p>
+        </div>
+
+        <div class="comparison__table-wrap">
+          <table class="comparison-table" role="table" aria-label="Plan feature comparison">
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Starter</th>
+                <th scope="col" class="col-pro">Pro</th>
+                <th scope="col">Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Users</td>
+                <td>Up to 3</td>
+                <td>Up to 15</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>Workspaces</td>
+                <td>1</td>
+                <td>5</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td>Automation templates</td>
+                <td>Basic</td>
+                <td>Advanced</td>
+                <td>Custom</td>
+              </tr>
+              <tr>
+                <td>Analytics</td>
+                <td>Standard</td>
+                <td>Advanced</td>
+                <td>Custom</td>
+              </tr>
+              <tr>
+                <td>Integrations</td>
+                <td class="cell-dash">—</td>
+                <td>CRM &amp; project tools</td>
+                <td>Custom</td>
+              </tr>
+              <tr>
+                <td>Support</td>
+                <td>Email</td>
+                <td>Priority</td>
+                <td>Dedicated manager</td>
+              </tr>
+              <tr>
+                <td>Security controls</td>
+                <td class="cell-dash">—</td>
+                <td class="cell-check">✓</td>
+                <td>Advanced</td>
+              </tr>
+              <tr>
+                <td>Custom onboarding</td>
+                <td class="cell-dash">—</td>
+                <td class="cell-dash">—</td>
+                <td class="cell-check">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PLAN RECOMMENDATION SECTION
+         ============================================================ -->
+    <section class="recommendation" aria-label="Plan recommendations">
+      <div class="container">
+
+        <span class="section-label">Find your fit</span>
+        <h2 class="section-title">Which plan is right for you?</h2>
+        <p class="section-subtitle">Match your team's size and automation needs to the plan that delivers the most value.</p>
+
+        <div class="recommendation__grid">
+
+          <!-- Starter recommendation -->
+          <div class="rec-card">
+            <div class="rec-card__icon" aria-hidden="true">🚀</div>
+            <p class="rec-card__plan">Starter</p>
+            <h3 class="rec-card__title">Simple setup, small team</h3>
+            <p class="rec-card__desc">
+              Choose Starter if you need a lightweight setup for a small team getting started with workflow organization and task automation.
+            </p>
+          </div>
+
+          <!-- Pro recommendation -->
+          <div class="rec-card">
+            <div class="rec-card__icon" aria-hidden="true">⚙️</div>
+            <p class="rec-card__plan">Pro</p>
+            <h3 class="rec-card__title">Automation, integrations, reporting</h3>
+            <p class="rec-card__desc">
+              Choose Pro if your team needs advanced automation rules, CRM and project tool integrations, and detailed analytics to drive operations.
+            </p>
+          </div>
+
+          <!-- Enterprise recommendation -->
+          <div class="rec-card">
+            <div class="rec-card__icon" aria-hidden="true">🏢</div>
+            <p class="rec-card__plan">Enterprise</p>
+            <h3 class="rec-card__title">Scale, security, custom workflows</h3>
+            <p class="rec-card__desc">
+              Choose Enterprise if your organization requires advanced security controls, unlimited scale, and a dedicated team to support implementation.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TRUST / SECURITY SECTION
+         ============================================================ -->
+    <section class="trust" aria-label="Security and trust">
+      <div class="container">
+
+        <div class="trust__header">
+          <span class="section-label">Security &amp; reliability</span>
+          <h2 class="section-title">Built for secure and scalable operations</h2>
+          <p class="section-subtitle">FlowDesk AI is built with the operational standards that technical teams expect from day one.</p>
+        </div>
+
+        <div class="trust__grid">
+
+          <div class="trust-card">
+            <div class="trust-card__icon" aria-hidden="true">🔒</div>
+            <h3 class="trust-card__title">Secure data handling</h3>
+            <p class="trust-card__desc">All data is encrypted at rest and in transit. Your team's information stays private and protected.</p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-card__icon" aria-hidden="true">👥</div>
+            <h3 class="trust-card__title">Team permissions</h3>
+            <p class="trust-card__desc">Granular role-based access controls let you decide who sees and edits what, at every level.</p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-card__icon" aria-hidden="true">⚡</div>
+            <h3 class="trust-card__title">Reliable workflows</h3>
+            <p class="trust-card__desc">99.9% uptime SLA with automated failover ensures your automations run without interruption.</p>
+          </div>
+
+          <div class="trust-card">
+            <div class="trust-card__icon" aria-hidden="true">💬</div>
+            <h3 class="trust-card__title">Responsive support</h3>
+            <p class="trust-card__desc">From email to dedicated managers, every team gets a support tier designed for their needs.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ SECTION — CSS-only accordion via <details>/<summary>
+         ============================================================ -->
+    <section class="faq" id="faq" aria-label="Frequently asked questions">
+      <div class="container">
+
+        <div class="faq__layout">
+
+          <!-- Left sidebar -->
+          <div class="faq__sidebar">
+            <span class="section-label">FAQ</span>
+            <h2 class="section-title">Questions? We have answers.</h2>
+            <p class="section-subtitle">
+              Still need help? Reach out to our team at <a href="mailto:support@flowdesk.ai" style="color: var(--color-accent); font-weight: 600;">support@flowdesk.ai</a>
+            </p>
+          </div>
+
+          <!-- FAQ list -->
+          <div class="faq__list" role="list">
+
+            <details class="faq-item">
+              <summary>Can I change plans later?</summary>
+              <div class="faq-item__body">
+                Yes. You can upgrade or downgrade your plan at any time from your account settings. Changes take effect at the start of your next billing cycle, and any prorated amount is automatically applied to your balance.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Is there a free trial?</summary>
+              <div class="faq-item__body">
+                All plans include a 14-day free trial with full access to the features of your selected tier. No credit card is required to get started. At the end of the trial, you can subscribe or let it expire — no automatic charges.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Do I need technical knowledge to use FlowDesk AI?</summary>
+              <div class="faq-item__body">
+                Not at all for the Starter and Pro plans. The visual workflow builder is designed to be intuitive for non-technical users. Enterprise customers who need custom workflow architecture will receive guided onboarding from our implementation team.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>What happens if I cancel?</summary>
+              <div class="faq-item__body">
+                If you cancel, your account remains active until the end of the current billing period. After that, your workspace is locked but not deleted — you have 30 days to export your data before it is permanently removed.
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Do you offer enterprise onboarding?</summary>
+              <div class="faq-item__body">
+                Yes. Enterprise customers receive a dedicated success manager who leads the full onboarding process, including workflow architecture design, team training, and integration setup. Contact our sales team to learn more.
+              </div>
+            </details>
+
+          </div><!-- /faq__list -->
+        </div><!-- /faq__layout -->
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FINAL CTA SECTION
+         ============================================================ -->
+    <section class="cta-final" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-final__inner">
+
+          <h2 class="cta-final__title">Ready to simplify your team workflow?</h2>
+          <p class="cta-final__text">
+            Start with the plan that fits your team today and upgrade as your operations grow.
+          </p>
+
+          <div class="cta-final__actions">
+            <a href="#pricing" class="btn btn-primary">Start free trial</a>
+            <a href="#footer" class="btn btn-outline-white">Talk to sales</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="footer__logo-mark" aria-hidden="true"></span>
+         Portfolio project by Marisol Valencia Cardona
+        </div>
+        <p class="footer__tagline">Pricing page demo built as a portfolio project.</p>
+      </div>
+
+      <nav class="footer__links" aria-label="Footer links">
+        <a href="#pricing">Privacy</a>
+        <a href="#pricing">Terms</a>
+        <a href="#footer">Contact</a>
+      </nav>
+
+      <p class="footer__copy">&copy; 2026 Marisol Valencia Cardona.</p>
+
+    </div>
+  </footer>
+
+</body>
+</html>
+```
